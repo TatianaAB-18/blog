@@ -3,7 +3,7 @@
     padding: 0px;
 }
 body{
-    background: #FFC2C3;
+    background-image: url(img/fondo2.webp);
     font-family: Arial, Helvetica, sans-serif;
 }
 #container{
@@ -11,7 +11,7 @@ body{
     margin: 0px auto;
 }
 header {
-    background: #FE7773;
+    background: #fe73c9;
     height: 200px;
     width: 100%;
     text-align: center;
@@ -20,7 +20,7 @@ header {
     font-size: 50px;
 }
 nav{
-    background: #E81E25;
+    background: #f70476;
     height: 50px;
 }
 nav ul li{
@@ -64,17 +64,36 @@ nav ul li:hover{
     border-bottom: 1px solid #000;
 }
 footer{
-    background: #E81E25;
+    background: #ed077a;
     color: hsl(0, 0%, 100%);
     text-align: center;
     height: 50px;
     line-height: 50px;
 }
 img{
-    width: 250px;
+    width: 300px;
 }
 .imgs{
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center;
+    margin: 20px;
 }
+.video{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+table{
+    background: #f610a2;
+    border-width: 8px;
+    margin-bottom: 9px;
+    border-color: #eb0f8f;
+    
+}
+col.fondo{
+    background-color: #f7f2f2;
+}
+
+
+
