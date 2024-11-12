@@ -10,7 +10,6 @@ body{
     width: 90%;
     margin: 0px auto;
 }
-
 header {
     background: #fe73c9;
     height: 200px;
@@ -56,7 +55,9 @@ nav ul li:hover{
 .buscador input{
     border-radius: 10px;
 }
-
+.clear{
+    clear: both;
+}
 #contenido{
     float: left;
     width: calculo (80% - 80px);
@@ -78,10 +79,7 @@ footer{
     height: 50px;
     line-height: 50px;
 }
-footer img{
-    width: 50px;
-}
-.imgs img{
+img{
     width: 300px;
 }
 .imgs{
@@ -100,11 +98,70 @@ table{
     border-width: 8px;
     margin-bottom: 9px;
     border-color: #eb0f8f;
-    
 }
 col.fondo{
     background-color: #f7f2f2;
 }
-
+html{
+    font-family: sans-serif;
+}
+.lineatemp{
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    border: 8px solid rgb(235, 22, 107);
+}
+.fila{
+    display: flex;
+    justify-content: start;
+    border-bottom: 8px solid rgb(239, 18, 129);
+    position: relative;
+}
+.fila .disco{
+    width: 36px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.fila .disco:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: calc(505 - 2px);
+    height: 100%;
+    width: 3px;
+    background: #80DEEA;
+    z-index: -1;
+}
+.fila:first-child .disco:after{
+    height: 50%;
+    top: 50%;
+}
+.fila:last-child .disco:after{
+    height: 50%;
+ }
+.fila .disco > div{
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: lightblue;
+    box-sizing: border-box;
+}
+.fila:hover .disco > div{
+    border: 3px solid red;
+    background: white;
+}
+.fila div:nth-of-type(2){
+    width: 20%;
+    padding: 4px;
+    display: flex;
+    align-items:center;
+}
+.fila div:nth-of-type(3){
+    width: 60%;
+    padding: 4px;
+ }
 
 
